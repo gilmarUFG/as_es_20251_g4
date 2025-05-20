@@ -1,0 +1,40 @@
+@startuml ComponentDiagram
+
+' Título opcional
+title Diagrama de Componentes - Sistema Genérico
+
+' Definindo os pacotes (opcional, para organização visual)
+package "Frontend" {
+  [WebApp] <<component>>
+}
+
+package "Backend" {
+  [API Gateway] <<component>>
+  [Auth Service] <<component>>
+  [User Service] <<component>>
+  [Order Service] <<component>>
+}
+
+package "Database" {
+  [User DB] <<database>>
+  [Order DB] <<database>>
+}
+
+package "External Services" {
+  [Payment Gateway] <<external>>
+  [Email Service] <<external>>
+}
+
+' Relacionamentos
+[WebApp] --> [API Gateway] : HTTP Request
+[API Gateway] --> [Auth Service] : Auth requests
+[API Gateway] --> [User Service] : REST calls
+[API Gateway] --> [Order Service] : REST calls
+
+[Auth Service] --> [User DB] : Queries
+[User Service] --> [User DB]
+[Order Service] --> [Order DB]
+[Order Service] --> [Payment Gateway] : Payment API
+[User Service] --> [Email Service] : Sends email
+
+@enduml

@@ -17,4 +17,4 @@ Veja o arquivo `diagrama_componentes.puml` na pasta `modelos_uml`.
 - **Apresentação**: Interface do usuário.
 - **Aplicação**: Orquestração dos casos de uso.
 - **Domínio**: Regras de negócio.
-- **Infraestrutura**: Integrações externas (blockchain, banco de dados, pagamentos).
+- **Infraestrutura**: Integrações externas (blockchain, banco de dados, pagamentos, transportadora).
