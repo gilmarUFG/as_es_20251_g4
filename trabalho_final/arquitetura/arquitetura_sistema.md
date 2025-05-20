@@ -12,7 +12,7 @@ Este documento descreve a arquitetura necessária e suficiente para suportar o d
 ## 3. Visões Arquiteturais
 - [Visão Geral](./visao_geral.md)
 - [Visão Lógica](./visao_logica.md)
-- [Visão Física](./visao_fisica.md)
+- [Visão Física](TBD)
 
 ## 4. Diagramas
 Os diagramas UML e PlantUML estão disponíveis na pasta `diagramas`.
