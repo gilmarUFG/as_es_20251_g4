@@ -1,17 +1,20 @@
 @startuml ComponentDiagram
 
-title Diagrama de Componentes - Plataforma E-commerce Blockchain
+title Diagrama de Componentes - Clean Architecture
 
 package "Frontend" {
   [WebApp] <<component>>
 }
 
-package "Backend" {
+package "Aplicação" {
   [API Principal] <<component>>
-  [Módulo Autenticação] <<component>>
-  [Módulo Produtos] <<component>>
+}
+
+package "Domínio" {
   [Módulo Pedidos] <<component>>
+  [Módulo Produtos] <<component>>
   [Módulo Pagamentos] <<component>>
+  [Módulo Autenticação] <<component>>
   [Módulo Blockchain] <<component>>
 }
 
@@ -20,21 +23,24 @@ package "Infraestrutura" {
   [Node Blockchain] <<external>>
   [Gateway Pagamento] <<external>>
   [Transportadora] <<external>>
+  [Serviço de Autenticação de Terceiros] <<external>>
 }
 
-[WebApp] --> [API Principal] : HTTP Request
+[WebApp] --> [API Principal] : REST
 
-[API Principal] --> [Módulo Autenticação] : Auth requests
-[API Principal] --> [Módulo Produtos] : REST calls
-[API Principal] --> [Módulo Pedidos] : REST calls
-[API Principal] --> [Módulo Pagamentos] : REST calls
-[API Principal] --> [Módulo Blockchain] : REST calls
+[API Principal] --> [Módulo Pedidos]
+[API Principal] --> [Módulo Produtos]
+[API Principal] --> [Módulo Pagamentos]
+[API Principal] --> [Módulo Autenticação]
+[API Principal] --> [Módulo Blockchain]
 
-[Módulo Autenticação] --> [Banco de Dados] : Queries
-[Módulo Produtos] --> [Banco de Dados]
-[Módulo Pedidos] --> [Banco de Dados]
-[Módulo Pedidos] --> [Transportadora] : Consulta status entrega
-[Módulo Pagamentos] --> [Gateway Pagamento] : Payment API
-[Módulo Blockchain] --> [Node Blockchain]
+
+[Banco de Dados] ..> [Módulo Pedidos] : Implementa persistência
+[Banco de Dados] ..> [Módulo Produtos]
+[Banco de Dados] ..> [Módulo Autenticação]
+[Gateway Pagamento] ..> [Módulo Pagamentos]
+[Node Blockchain] ..> [Módulo Blockchain]
+[Transportadora] ..> [Módulo Pedidos]
+[Serviço de Autenticação de Terceiros] ..> [Módulo Autenticação]
 
 @enduml
