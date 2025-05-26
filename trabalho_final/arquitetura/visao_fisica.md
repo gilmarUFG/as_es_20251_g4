@@ -6,7 +6,7 @@ A arquitetura física do sistema será baseada em serviços gerenciados da AWS, 
 
 - **Amazon EC2**: Hospeda o backend (API) e, opcionalmente, o frontend (caso não utilize serviços serverless).
 - **Amazon S3**: Armazena arquivos estáticos do frontend (caso de Single Page Application) e outros artefatos.
-- **Amazon RDS**: Banco de dados relacional gerenciado para armazenar dados operacionais (usuários, produtos, pedidos, etc.).
+- **Amazon RDS**: Banco de dados relacional gerenciado para armazenar dados operacionais (usuários, produtos, etc.).
 - **Amazon Managed Blockchain**: Serviço gerenciado para integração com a blockchain, facilitando o registro e consulta de eventos.
 - **AWS API Gateway**: Gerencia as requisições HTTP para o backend, provendo segurança e escalabilidade.
 - **Serviços Externos**: Integração com gateways de pagamento e provedores de autenticação de terceiros.
