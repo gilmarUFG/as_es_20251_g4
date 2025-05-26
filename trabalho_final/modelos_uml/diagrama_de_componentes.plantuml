@@ -1,9 +1,7 @@
 @startuml ComponentDiagram
 
-' Título opcional
 title Diagrama de Componentes - Plataforma E-commerce Blockchain
 
-' Definindo os pacotes (opcional, para organização visual)
 package "Frontend" {
   [WebApp] <<component>>
 }
@@ -21,10 +19,11 @@ package "Infraestrutura" {
   [Banco de Dados] <<database>>
   [Node Blockchain] <<external>>
   [Gateway Pagamento] <<external>>
+  [Transportadora] <<external>>
 }
 
-' Relacionamentos
 [WebApp] --> [API Principal] : HTTP Request
+
 [API Principal] --> [Módulo Autenticação] : Auth requests
 [API Principal] --> [Módulo Produtos] : REST calls
 [API Principal] --> [Módulo Pedidos] : REST calls
@@ -34,6 +33,7 @@ package "Infraestrutura" {
 [Módulo Autenticação] --> [Banco de Dados] : Queries
 [Módulo Produtos] --> [Banco de Dados]
 [Módulo Pedidos] --> [Banco de Dados]
+[Módulo Pedidos] --> [Transportadora] : Consulta status entrega
 [Módulo Pagamentos] --> [Gateway Pagamento] : Payment API
 [Módulo Blockchain] --> [Node Blockchain]
 
