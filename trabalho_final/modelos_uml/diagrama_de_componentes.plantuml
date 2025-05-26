@@ -1,7 +1,7 @@
 @startuml ComponentDiagram
 
 ' Título opcional
-title Diagrama de Componentes - Sistema Genérico
+title Diagrama de Componentes - Plataforma E-commerce Blockchain
 
 ' Definindo os pacotes (opcional, para organização visual)
 package "Frontend" {
@@ -9,32 +9,32 @@ package "Frontend" {
 }
 
 package "Backend" {
-  [API Gateway] <<component>>
-  [Auth Service] <<component>>
-  [User Service] <<component>>
-  [Order Service] <<component>>
+  [API Principal] <<component>>
+  [Módulo Autenticação] <<component>>
+  [Módulo Produtos] <<component>>
+  [Módulo Pedidos] <<component>>
+  [Módulo Pagamentos] <<component>>
+  [Módulo Blockchain] <<component>>
 }
 
-package "Database" {
-  [User DB] <<database>>
-  [Order DB] <<database>>
-}
-
-package "External Services" {
-  [Payment Gateway] <<external>>
-  [Email Service] <<external>>
+package "Infraestrutura" {
+  [Banco de Dados] <<database>>
+  [Node Blockchain] <<external>>
+  [Gateway Pagamento] <<external>>
 }
 
 ' Relacionamentos
-[WebApp] --> [API Gateway] : HTTP Request
-[API Gateway] --> [Auth Service] : Auth requests
-[API Gateway] --> [User Service] : REST calls
-[API Gateway] --> [Order Service] : REST calls
+[WebApp] --> [API Principal] : HTTP Request
+[API Principal] --> [Módulo Autenticação] : Auth requests
+[API Principal] --> [Módulo Produtos] : REST calls
+[API Principal] --> [Módulo Pedidos] : REST calls
+[API Principal] --> [Módulo Pagamentos] : REST calls
+[API Principal] --> [Módulo Blockchain] : REST calls
 
-[Auth Service] --> [User DB] : Queries
-[User Service] --> [User DB]
-[Order Service] --> [Order DB]
-[Order Service] --> [Payment Gateway] : Payment API
-[User Service] --> [Email Service] : Sends email
+[Módulo Autenticação] --> [Banco de Dados] : Queries
+[Módulo Produtos] --> [Banco de Dados]
+[Módulo Pedidos] --> [Banco de Dados]
+[Módulo Pagamentos] --> [Gateway Pagamento] : Payment API
+[Módulo Blockchain] --> [Node Blockchain]
 
 @enduml
