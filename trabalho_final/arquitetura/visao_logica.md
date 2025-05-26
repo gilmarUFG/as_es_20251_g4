@@ -16,7 +16,8 @@
 
 Veja o arquivo `diagrama_de_componentes.puml` na pasta `modelos_uml`.
 
-## Fluxo Principal: Realizar Compra
+## Fluxos Principais:  
+### 1. Realizar Compra
 
 1. Usuário seleciona produtos e inicia o pedido.
 2. O Módulo de Pedidos valida o estoque dos produtos.
@@ -24,6 +25,21 @@ Veja o arquivo `diagrama_de_componentes.puml` na pasta `modelos_uml`.
 4. Usuário realiza o pagamento (Módulo de Pagamentos).
 5. Pedido é atualizado conforme o andamento (envio, entrega), com eventos registrados na blockchain.
 6. O pagamento é liberado ao vendedor somente após a confirmação da entrega.
+
+### 2. Cadastro e Autenticação
+
+1. Usuário acessa a interface de cadastro ou login.
+2. Dados são enviados ao Módulo de Autenticação via REST API.
+3. Para cadastro, o sistema valida dados e cria o usuário no banco de dados.
+4. Para autenticação, as credenciais são verificadas e, se válidas, um token de acesso é gerado.
+5. Usuário autenticado pode acessar funcionalidades restritas da plataforma.
+
+### 3. Registro e Consulta de Transações na Blockchain
+
+1. Sempre que uma ação crítica ocorre (criação de pedido, atualização de status, avaliação), o Backend/API envia um evento ao Módulo Blockchain.
+2. O Módulo Blockchain registra o evento na blockchain, garantindo imutabilidade e rastreabilidade.
+3. Para consulta, o Backend/API requisita ao Módulo Blockchain os dados históricos de transações ou eventos relacionados a um pedido.
+4. As informações são retornadas ao usuário ou administrador, garantindo transparência e confiança no processo.
 
 ## Camadas
 
