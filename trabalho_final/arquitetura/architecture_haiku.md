@@ -1,6 +1,6 @@
-# Architecture Haiku — E-commerce Blockchain
+# E-commerce Blockchain Architecture Haiku
 
-## Haiku Arquitetural
+## Haiku
 
 Blocos conectados,  
 Confiança na cadeia,  
@@ -8,33 +8,62 @@ Fluxo transparente.
 
 ---
 
-## Essência Arquitetural
+## Objetivo
 
-- **Transparência e rastreabilidade**: Blockchain registra transações, avaliações e eventos críticos, garantindo confiança.
-- **Segurança**: Autenticação robusta, armazenamento seguro de dados sensíveis e integração com provedores confiáveis.
-- **Escalabilidade e flexibilidade**: Arquitetura modular baseada em serviços gerenciados da AWS.
-- **Evolução contínua**: Pontos de extensão previstos, como integração futura com transportadoras e análise de dados em lakehouse.
+- Prover uma plataforma de e-commerce segura, transparente e rastreável, utilizando blockchain para registrar eventos críticos e garantir confiança entre usuários.
 
 ---
 
-## Stack Tecnológico
+## Requisitos Funcionais
 
-- **Frontend Web (SPA)**: Desenvolvido em **React**, hospedado em Amazon S3 ou EC2.
-- **Backend/API**: Desenvolvido em **.NET**, exposto via REST API.
-- **Banco de Dados Relacional (PostgreSQL no Amazon RDS)**: Persistência de dados operacionais.
-- **Blockchain (Amazon Managed Blockchain)**: Registro imutável de eventos e transações.
-- **AWS API Gateway**: Gerenciamento de requisições HTTP.
-- **Gateways de Pagamento**: Integração para pagamentos digitais.
-- **Serviços de Autenticação de Terceiros**: Login social e autenticação federada.
+- Cadastro e autenticação de usuários e vendedores.
+- Exibição e busca de produtos.
+- Realização de pedidos com validação e atualização automática de estoque.
+- Pagamentos digitais (criptomoedas e cartões).
+- Registro imutável de transações, avaliações e status de pedidos na blockchain.
+- Consulta ao histórico de pedidos e avaliações.
+- Integração futura com transportadoras e análise de dados.
 
 ---
 
-## Princípios
+## Restrições Técnicas
 
-- **Separação de responsabilidades**: Camadas bem definidas (apresentação, aplicação, domínio, infraestrutura).
-- **Baixo acoplamento, alta coesão**: Módulos independentes, comunicação via APIs.
-- **Imutabilidade e confiança**: Blockchain como fonte de verdade para eventos críticos.
-- **Documentação viva**: Diagramas PlantUML e especificações versionadas.
+- Utilizar **React** para o frontend (SPA).
+- Backend implementado em **.NET**.
+- Banco de dados relacional **PostgreSQL** (Amazon RDS).
+- Blockchain via **Amazon Managed Blockchain**.
+- Comunicação entre módulos via **REST API**.
+- Infraestrutura baseada em serviços gerenciados da **AWS**.
+- Integração com gateways de pagamento e autenticação de terceiros.
+
+---
+
+## Atributos de Qualidade
+
+- **Segurança**: Autenticação robusta, armazenamento seguro de dados sensíveis.
+- **Transparência e rastreabilidade**: Blockchain como fonte de verdade.
+- **Escalabilidade**: Arquitetura modular e uso de serviços gerenciados.
+- **Evolução**: Pontos de extensão previstos para integrações futuras.
+- **Usabilidade**: Interface intuitiva e responsiva.
+
+---
+
+## Decisões de Design
+
+- Separação de camadas: apresentação, aplicação, domínio e infraestrutura.
+- Modularização dos principais domínios: pedidos, produtos, pagamentos, autenticação, blockchain.
+- Uso de REST API para comunicação interna e externa.
+- PlantUML para documentação dos diagramas.
+- Versionamento e documentação viva no repositório.
+
+---
+
+## Planos Futuros
+
+- Integração com arquitetura lakehouse para análise avançada de dados.
+- Migração de partes do backend para serverless (AWS Lambda).
+- Ampliação das integrações com transportadoras e novos métodos de pagamento.
+- Melhoria contínua da experiência do usuário e dos mecanismos de segurança.
 
 ---
 
