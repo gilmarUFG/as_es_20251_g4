@@ -1,18 +1,9 @@
 # ChainBuy Architecture Haiku
 
-## Haiku
-
-Blocos conectados,  
-Confiança na cadeia,  
-Fluxo transparente.
-
----
-
 ## Objetivo
 
 - Prover uma plataforma de e-commerce segura, transparente e rastreável, utilizando blockchain para registrar eventos críticos e garantir confiança entre usuários.
 
----
 
 ## Requisitos Funcionais
 
@@ -22,21 +13,15 @@ Fluxo transparente.
 - Pagamentos digitais (criptomoedas e cartões).
 - Registro imutável de transações, avaliações e status de pedidos na blockchain.
 - Consulta ao histórico de pedidos e avaliações.
-- Integração futura com transportadoras e análise de dados.
+- Integração com transportadoras.
 
----
 
 ## Restrições Técnicas
 
-- Utilizar **React** para o frontend.
-- Backend implementado em **.NET**.
-- Banco de dados relacional **PostgreSQL** (Amazon RDS).
-- Blockchain via **Amazon Managed Blockchain**.
-- Comunicação entre módulos via **REST API**.
-- Infraestrutura baseada em serviços gerenciados da **AWS**.
-- Integração com gateways de pagamento e autenticação de terceiros.
+- Adaptar o funcionamento do e-commerce ao uso da blockchain.
+- Garantir a segurança e confiabilidade dos dados disponibilizados.
+- Gerir a infraestrutura de modo a controlar os gastos sem sacrificar a flexibilidade.
 
----
 
 ## Atributos de Qualidade
 
@@ -45,28 +30,41 @@ Fluxo transparente.
 - **Escalabilidade**: Arquitetura modular e uso de serviços gerenciados.
 - **Evolução**: Pontos de extensão previstos para integrações futuras.
 
----
 
 ## Decisões de Design
 
-- Separação de camadas: apresentação, aplicação, domínio e infraestrutura.
-- Modularização dos principais domínios: pedidos, produtos, pagamentos, autenticação, blockchain.
-- Uso de REST API para comunicação interna e externa.
-- Versionamento e documentação viva no repositório.
+Tecnologias Escolhidas:
 
----
+- **React** para o desenvolvimento do frontend, proporcionando uma interface moderna e responsiva.
+- **.NET** para o backend, garantindo robustez, segurança e integração eficiente com serviços AWS.
+- **PostgreSQL** (Amazon RDS) como banco de dados relacional, assegurando confiabilidade e escalabilidade.
+- **Amazon Managed Blockchain** para registro imutável de eventos críticos.
+- **REST API** como padrão de comunicação entre frontend, backend e módulos internos.
+- **AWS** como base da infraestrutura, utilizando serviços gerenciados para facilitar manutenção e escalabilidade.
+- Integração com gateways de pagamento e provedores de autenticação de terceiros.
 
-## Planos Futuros
+Arquitetura do Sistema:
 
-- Integração com arquitetura lakehouse para análise avançada de dados.
-- Migração de partes do backend para serverless (AWS Lambda).
+- **Frontend**: Aplicação SPA desenvolvida em React, hospedada em Amazon S3 e distribuída via CloudFront.
+- **API Layer**: Backend em .NET, exposto via REST API, responsável pela lógica de negócio e orquestração dos módulos.
+- **Domínio**: Módulos independentes para pedidos, produtos, pagamentos, autenticação e blockchain, promovendo baixo acoplamento e alta coesão.
+- **Infraestrutura**: Serviços AWS (EC2, RDS, Managed Blockchain, API Gateway, CloudFront, S3) compondo a base da solução.
+
+Interface do Usuário:
+
+- Interface intuitiva e responsiva desenvolvida em React.
+- Componentes customizados para atender às necessidades específicas do negócio.
+- Foco contínuo na melhoria da experiência do usuário.
+
+Autenticação:
+
+- Implementação de autenticação robusta, com possibilidade de integração com provedores externos (ex: Google, Facebook).
+- Armazenamento seguro de credenciais e dados sensíveis.
+
+Planos Futuros:
+
+- Evolução para arquitetura lakehouse, integrando análise avançada de dados com Amazon S3 e Redshift/Athena.
+- Migração gradual de partes do backend para serverless (AWS Lambda) visando redução de custos e maior escalabilidade.
 - Ampliação das integrações com transportadoras e novos métodos de pagamento.
 - Melhoria contínua da experiência do usuário e dos mecanismos de segurança.
-
----
-
-## Referências
-
-- [Definição dos Requisitos](../definicao_trabalho_final_g4.md)
-- [Histórias de Usuário](https://github.com/gilmarUFG/rs_es_20251_g4/tree/estudante/trabalho_final/historias_usuarios)
-- [Diagramas UML](../modelos_uml)
+- Adoção de práticas de CI/CD e monitoramento avançado para garantir qualidade e disponibilidade do sistema.

@@ -13,7 +13,7 @@ A plataforma é composta por módulos integrados que interagem entre si e com a 
 
 - **Gateways de Pagamento**: Permitem transações com carteiras digitais e cartões.
 - **Serviços de Autenticação de Terceiros**: Possibilitam login social ou autenticação federada.
-- **Transportadoras**: Integração futura para rastreamento automático de entregas.
+- **Transportadoras**: Integração para rastreamento automático de entregas.
 
 ## Principais Fluxos
 
