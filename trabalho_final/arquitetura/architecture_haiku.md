@@ -28,7 +28,7 @@ Fluxo transparente.
 
 ## Restrições Técnicas
 
-- Utilizar **React** para o frontend (SPA).
+- Utilizar **React** para o frontend.
 - Backend implementado em **.NET**.
 - Banco de dados relacional **PostgreSQL** (Amazon RDS).
 - Blockchain via **Amazon Managed Blockchain**.
@@ -43,8 +43,7 @@ Fluxo transparente.
 - **Segurança**: Autenticação robusta, armazenamento seguro de dados sensíveis.
 - **Transparência e rastreabilidade**: Blockchain como fonte de verdade.
 - **Escalabilidade**: Arquitetura modular e uso de serviços gerenciados.
-- **Evolução**: Pontos de extensão previstos para integrações futuras. []
-- **Usabilidade**: Interface intuitiva e responsiva.[]
+- **Evolução**: Pontos de extensão previstos para integrações futuras.
 
 ---
 
@@ -53,7 +52,6 @@ Fluxo transparente.
 - Separação de camadas: apresentação, aplicação, domínio e infraestrutura.
 - Modularização dos principais domínios: pedidos, produtos, pagamentos, autenticação, blockchain.
 - Uso de REST API para comunicação interna e externa.
-- PlantUML para documentação dos diagramas.
 - Versionamento e documentação viva no repositório.
 
 ---
