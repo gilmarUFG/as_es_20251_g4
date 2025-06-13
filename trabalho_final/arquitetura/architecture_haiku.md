@@ -1,4 +1,4 @@
-# E-commerce Blockchain Architecture Haiku
+# ChainBuy Architecture Haiku
 
 ## Haiku
 
