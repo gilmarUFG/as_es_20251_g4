@@ -43,8 +43,8 @@ Fluxo transparente.
 - **Segurança**: Autenticação robusta, armazenamento seguro de dados sensíveis.
 - **Transparência e rastreabilidade**: Blockchain como fonte de verdade.
 - **Escalabilidade**: Arquitetura modular e uso de serviços gerenciados.
-- **Evolução**: Pontos de extensão previstos para integrações futuras.
-- **Usabilidade**: Interface intuitiva e responsiva.
+- **Evolução**: Pontos de extensão previstos para integrações futuras. []
+- **Usabilidade**: Interface intuitiva e responsiva.[]
 
 ---
 
