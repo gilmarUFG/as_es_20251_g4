@@ -20,7 +20,9 @@ Usuários acessam o frontend hospedado no Amazon S3 (ou EC2) por meio do Amazon 
 
 ## Diagrama da Infraestrutura AWS
 
-![Diagrama AWS](../diagramas/diagrama_de_infra_aws.png)
+<div align="center">
+  <img src="../diagramas/diagrama_de_infra_aws.png" width="500">
+</div>
 
 ---
 

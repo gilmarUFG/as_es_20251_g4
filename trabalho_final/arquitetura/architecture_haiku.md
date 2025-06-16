@@ -24,12 +24,14 @@
 
 
 ## Atributos de Qualidade
+- Priorizados da seguinte forma:  
+    - **Segurança**: Autenticação robusta, armazenamento seguro de dados sensíveis.  
+    - **Rastreabilidade**: Blockchain como fonte de verdade.  
+    - **Usabilidade**: Uso fácil e intuitivo.  
 
-- **Segurança**: Autenticação robusta, armazenamento seguro de dados sensíveis.
-- **Transparência e rastreabilidade**: Blockchain como fonte de verdade.
-- **Escalabilidade**: Arquitetura modular e uso de serviços gerenciados.
-- **Evolução**: Pontos de extensão previstos para integrações futuras.
-
+<div align="center">
+  <img src="../assets/quality_attributes.png" width="400">
+</div>
 
 ## Decisões de Design
 
