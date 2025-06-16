@@ -1,7 +1,6 @@
 @startuml ComponentDiagram
 
-title Diagrama de Componentes - Clean Architecture
-
+title ChainBuy - Diagrama de Componentes 
 package "Frontend" {
   [WebApp] <<component>>
 }
