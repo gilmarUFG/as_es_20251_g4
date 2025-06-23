@@ -47,7 +47,7 @@ Tecnologias Escolhidas:
 
 Arquitetura do Sistema:
 
-- **Frontend**: Aplicação SPA desenvolvida em React, hospedada em Amazon S3 e distribuída via CloudFront.
+- **Frontend**: Aplicação desenvolvida em React, hospedada em Amazon S3 e distribuída via CloudFront.
 - **API Layer**: Backend em .NET, exposto via REST API, responsável pela lógica de negócio e orquestração dos módulos.
 - **Domínio**: Módulos independentes para pedidos, produtos, pagamentos, autenticação e blockchain, promovendo baixo acoplamento e alta coesão.
 - **Infraestrutura**: Serviços AWS (EC2, RDS, Managed Blockchain, API Gateway, CloudFront, S3) compondo a base da solução.
