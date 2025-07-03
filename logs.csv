@@ -1,0 +1,230 @@
+commit 19c7130ce117034beb4b526f0e8e3dd488fcb720
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon Jun 30 11:06:09 2025 -0300
+
+    update repository
+
+commit bcf88f02f46f2ab95bf29c0baa19ced947063c52
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon Jun 30 10:18:54 2025 -0300
+
+    Delete readme_folder_tg.md
+
+commit 263f17b806a77387555d209c2b23c0f59acb5ec8
+Merge: 5d10677 8f20003
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Sun Jun 29 12:38:43 2025 -0300
+
+    Merge branch 'estudante'
+
+commit 5d1067715d19c419cf12db1fa9d0e838c6bcfe16
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Sun Jun 29 12:38:27 2025 -0300
+
+    update repository
+
+commit 8f200030a3bc011bee6a5c55e8b4f90ad0d40951
+Author: Joseppe Fellini <117702056+jongas124@users.noreply.github.com>
+Date:   Thu Jun 26 01:08:21 2025 -0300
+
+    add slides
+
+commit 7ba914d1bcdffa89d8807c66caa27ac919b0dfdd
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Wed Jun 25 20:12:34 2025 -0300
+
+    corrigindo atividades
+
+commit 514919efe31caa17f20bd9f93bcd9692cfecc3b3
+Author: Mauro Sérgio <mauro-jr50@hotmail.com>
+Date:   Mon Jun 23 12:34:25 2025 -0300
+
+    fix: identificação da ADR-005 adicionada
+
+commit d106ef10d1c46d536f80f32e20127c5eab7c102e
+Author: Mauro Sérgio <mauro-jr50@hotmail.com>
+Date:   Mon Jun 23 12:28:22 2025 -0300
+
+    fix: small correction
+
+commit 3c94a6cebf8b7d36f24955f6fce1a607eec356cf
+Author: Mauro Sérgio <131288294+Omega050@users.noreply.github.com>
+Date:   Mon Jun 23 11:14:54 2025 -0300
+
+    Rename quality_attributes.PNG to quality_attributes.png
+
+commit fbeea5eac23c9f065b2b10599dd1a738d71c0f14
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon Jun 16 10:41:04 2025 -0300
+
+    refactor: mudança no título do diagrama
+
+commit c66a67077c5b24f222f3173206f7dded80b251d3
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Sun Jun 15 21:17:12 2025 -0300
+
+    feat: refinamento dos principais atributos de qualidade.
+
+commit eba807c50d324b4c69b68d4e3fdfbaca4021c1c2
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Fri Jun 13 15:02:47 2025 -0300
+
+    feat: Resumindo o architecture_haiku.
+
+commit 1430363a1c00e2b4d777badd8c052f39dadd2ef1
+Merge: 09dde5b 70d7330
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Fri Jun 13 14:36:26 2025 -0300
+
+    Merge branch 'estudante' of https://github.com/gilmarUFG/as_es_20251_g4 into estudante
+
+commit 09dde5ba3795d24eb91c2469484583dd2697357c
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Fri Jun 13 14:36:21 2025 -0300
+
+    Atualizando o diagrama
+
+commit 70d733080321013d2b435e81a577315fde33db2e
+Author: Joseppe Fellini <117702056+jongas124@users.noreply.github.com>
+Date:   Fri Jun 13 13:48:16 2025 -0300
+
+    fix: remove few things
+
+commit a2b7b952361c9c9a0f014c82061feb1fe1e379d6
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Fri Jun 13 13:36:54 2025 -0300
+
+    feat: detalhamento da visão física e diagrama de infraestrutura.
+
+commit 48dbd618be6bad1d5c60e8ffc1500c094345f0d1
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Tue Jun 10 16:25:46 2025 -0300
+
+    Atualizando o haiku arquitetural
+
+commit 5928f2cda108135ef4ce47f1b48310846c14c22a
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon Jun 9 12:27:32 2025 -0300
+
+    feat: Definição do architecture haiku e separação das ADRs.
+
+commit 62ca6d73daeeffbc38f911cd6157761337cdf1c8
+Merge: fec85cb 7402787
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon May 26 19:12:11 2025 -0300
+
+    Merge branch 'main' into estudante
+
+commit 7402787e61434fb85cb4ec1967c42b71de6c708a
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon May 26 19:08:36 2025 -0300
+
+    update repository
+
+commit fec85cbfee4b5768ec238428ea53b7bea36d88bd
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon May 26 18:26:14 2025 -0300
+
+    Organizando o diagrama de componente segundo as dependências
+
+commit 081b21911b31ecbf693dfca1070516bf3a39705b
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon May 26 14:43:29 2025 -0300
+
+    Atualizando o diagrama de Componentes
+
+commit 7bfe7a506ac0f20ed11e7fae17b9cb77ffda7a67
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon May 26 14:40:26 2025 -0300
+
+    Aprimorando a visão geral
+
+commit 75792af223d2cb36631284f6323a6f17e7f33c91
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon May 26 14:27:43 2025 -0300
+
+    Atualizando a visão lógica
+
+commit 43476ef31564621985b41e846fedd2f212f0889e
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon May 26 13:18:55 2025 -0300
+
+    Visão física aprimorada
+
+commit 7112493b1cad1e189910e0fc28b73d64f863b559
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Mon May 26 13:04:52 2025 -0300
+
+    Primeira concepção da visão física
+
+commit ed7bb35cb2000eb300f969abf700a0511beaaf34
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Tue May 20 13:38:02 2025 -0300
+
+    Adicionando referência ao diagrama de classe
+
+commit 247b935398b67bec921b7afc46a4625aa6fc0b64
+Author: jongas124 <kossos124@gmail.com>
+Date:   Tue May 20 13:13:40 2025 -0300
+
+    feat: add logic vision
+
+commit f6b48c0a64328d278f21efa5b1ac65d2bee80153
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Tue May 20 13:08:36 2025 -0300
+
+    Visão física ainda indeterminada
+
+commit c544ba936603b454d0dda486cb7089f2666e816f
+Author: omega050 <mauro-jr50@hotmail.com>
+Date:   Tue May 20 13:06:33 2025 -0300
+
+    Organização inicial do trabalho final
+
+commit bd97d0976f0c994a6d87d68dacede0fc4e25f40d
+Author: Joseppe Fellini <117702056+jongas124@users.noreply.github.com>
+Date:   Sun May 11 17:03:27 2025 -0300
+
+    feat: add as5
+
+commit d1756d74c328142cc5cae302627dd3c8a7730531
+Author: Mauro Sérgio <131288294+Omega050@users.noreply.github.com>
+Date:   Sun May 4 22:13:02 2025 -0300
+
+    Add files via upload
+
+commit 6efe354dd2fffd69ee7698894d39cd25be1874a5
+Author: Joseppe Fellini <117702056+jongas124@users.noreply.github.com>
+Date:   Sun Apr 27 19:20:20 2025 -0300
+
+    add as4
+
+commit 3c6fd0edbb949479a0b8525c0546e0c5a98e6299
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Sat Apr 19 12:46:36 2025 -0300
+
+    update repository
+
+commit d3b9bbbc1d10f48becdef47bdfd649d20c54bd76
+Author: Mauro Sérgio <131288294+Omega050@users.noreply.github.com>
+Date:   Mon Mar 24 22:16:39 2025 -0300
+
+    Add files via upload
+
+commit 692ad3ce2dd2343a26a80d45dabc0d61a3a06622
+Author: jongas124 <117702056+jongas124@users.noreply.github.com>
+Date:   Mon Mar 17 21:35:43 2025 -0300
+
+    Tarefa em sala grupo 4
+
+commit e265cde60f50fa42a767f8b264ea64b25afaf534
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Fri Feb 28 17:02:50 2025 -0300
+
+    Update README.md file.
+
+commit 317a9169f300822f496d65b6a19efa8174d53acc
+Author: Gilmar Ferreira Arantes <130784207+gilmarUFG@users.noreply.github.com>
+Date:   Fri Feb 28 14:30:09 2025 -0300
+
+    Initial commit
